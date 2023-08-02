@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Element</title>
+    <script>
+    //   let arr = [10,20,30,50,40,50,60,50]
+    //   let item = 50;
+    //   console.log(arr);
+    //   let index = undefined;
+    //   for(let i = 0; i<=arr.length-1; i++){
+    //       console.log(arr[i]);
+    //       if(arr[i] === item){
+    //           index = i;
+    //       }
+    //   }
+    //   console.log(index);
+
+      function searchEle() {
+        let arr = [10, 20, 30, 40, 50, 60];
+        let item = document.getElementById('search').value
+        console.log(arr);
+        let index = undefined;
+        for (let i = 0; i <= arr.length - 1; i++) {
+        //   console.log(arr[i]);
+          if (arr[i] === parseInt(item)) {
+            index = i;
+          }
+        }
+        console.log(index);
+      }
+
+    //   through javascript function 
+    // let arr1 = [2,4,6,7,9,5]
+    // let data = 9
+    // console.warn(arr1.indexOf(data));
+    </script>
+  </head>
+  <body>
+    <h1>Search Element in Array</h1>
+    <input type="text" id="search" placeholder="Enter Element" />
+    <button onclick="searchEle()">Search</button>
+  </body>
+</html>
